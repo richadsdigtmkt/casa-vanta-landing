@@ -1,2477 +1,761 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="es-MX">
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Aptos;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	font-size:11.0pt;
-	font-family:"Aptos",sans-serif;}
-h1
-	{mso-style-link:"Título 1 Car";
-	margin-top:18.0pt;
-	margin-right:0cm;
-	margin-bottom:4.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	page-break-after:avoid;
-	font-size:20.0pt;
-	font-family:"Aptos Display",sans-serif;
-	color:#0F4761;
-	font-weight:normal;}
-h2
-	{mso-style-link:"Título 2 Car";
-	margin-top:8.0pt;
-	margin-right:0cm;
-	margin-bottom:4.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	page-break-after:avoid;
-	font-size:16.0pt;
-	font-family:"Aptos Display",sans-serif;
-	color:#0F4761;
-	font-weight:normal;}
-h3
-	{mso-style-link:"Título 3 Car";
-	margin-top:8.0pt;
-	margin-right:0cm;
-	margin-bottom:4.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	page-break-after:avoid;
-	font-size:14.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#0F4761;
-	font-weight:normal;}
-h4
-	{mso-style-link:"Título 4 Car";
-	margin-top:4.0pt;
-	margin-right:0cm;
-	margin-bottom:2.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	page-break-after:avoid;
-	font-size:11.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#0F4761;
-	font-weight:normal;
-	font-style:italic;}
-h5
-	{mso-style-link:"Título 5 Car";
-	margin-top:4.0pt;
-	margin-right:0cm;
-	margin-bottom:2.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	page-break-after:avoid;
-	font-size:11.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#0F4761;
-	font-weight:normal;}
-h6
-	{mso-style-link:"Título 6 Car";
-	margin-top:2.0pt;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	line-height:107%;
-	page-break-after:avoid;
-	font-size:11.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#595959;
-	font-weight:normal;
-	font-style:italic;}
-p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
-	{mso-style-link:"Título 7 Car";
-	margin-top:2.0pt;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	line-height:107%;
-	page-break-after:avoid;
-	font-size:11.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#595959;}
-p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
-	{mso-style-link:"Título 8 Car";
-	margin:0cm;
-	line-height:107%;
-	page-break-after:avoid;
-	font-size:11.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#272727;
-	font-style:italic;}
-p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
-	{mso-style-link:"Título 9 Car";
-	margin:0cm;
-	line-height:107%;
-	page-break-after:avoid;
-	font-size:11.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#272727;}
-p.MsoTitle, li.MsoTitle, div.MsoTitle
-	{mso-style-link:"Título Car";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:4.0pt;
-	margin-left:0cm;
-	font-size:28.0pt;
-	font-family:"Aptos Display",sans-serif;
-	letter-spacing:-.5pt;}
-p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
-	{mso-style-link:"Título Car";
-	margin:0cm;
-	font-size:28.0pt;
-	font-family:"Aptos Display",sans-serif;
-	letter-spacing:-.5pt;}
-p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
-	{mso-style-link:"Título Car";
-	margin:0cm;
-	font-size:28.0pt;
-	font-family:"Aptos Display",sans-serif;
-	letter-spacing:-.5pt;}
-p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
-	{mso-style-link:"Título Car";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:4.0pt;
-	margin-left:0cm;
-	font-size:28.0pt;
-	font-family:"Aptos Display",sans-serif;
-	letter-spacing:-.5pt;}
-p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
-	{mso-style-link:"Subtítulo Car";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	font-size:14.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#595959;
-	letter-spacing:.75pt;}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:36.0pt;
-	line-height:107%;
-	font-size:11.0pt;
-	font-family:"Aptos",sans-serif;}
-p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	line-height:107%;
-	font-size:11.0pt;
-	font-family:"Aptos",sans-serif;}
-p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	line-height:107%;
-	font-size:11.0pt;
-	font-family:"Aptos",sans-serif;}
-p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:36.0pt;
-	line-height:107%;
-	font-size:11.0pt;
-	font-family:"Aptos",sans-serif;}
-p.MsoQuote, li.MsoQuote, div.MsoQuote
-	{mso-style-link:"Cita Car";
-	margin-top:8.0pt;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	text-align:center;
-	line-height:107%;
-	font-size:11.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#404040;
-	font-style:italic;}
-p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
-	{mso-style-link:"Cita destacada Car";
-	margin-top:18.0pt;
-	margin-right:43.2pt;
-	margin-bottom:18.0pt;
-	margin-left:43.2pt;
-	text-align:center;
-	line-height:107%;
-	border:none;
-	padding:0cm;
-	font-size:11.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#0F4761;
-	font-style:italic;}
-span.MsoIntenseEmphasis
-	{color:#0F4761;
-	font-style:italic;}
-span.MsoIntenseReference
-	{font-variant:small-caps;
-	color:#0F4761;
-	letter-spacing:.25pt;
-	font-weight:bold;}
-span.Ttulo1Car
-	{mso-style-name:"Título 1 Car";
-	mso-style-link:"Título 1";
-	font-family:"Aptos Display",sans-serif;
-	color:#0F4761;}
-span.Ttulo2Car
-	{mso-style-name:"Título 2 Car";
-	mso-style-link:"Título 2";
-	font-family:"Aptos Display",sans-serif;
-	color:#0F4761;}
-span.Ttulo3Car
-	{mso-style-name:"Título 3 Car";
-	mso-style-link:"Título 3";
-	font-family:"Times New Roman",serif;
-	color:#0F4761;}
-span.Ttulo4Car
-	{mso-style-name:"Título 4 Car";
-	mso-style-link:"Título 4";
-	font-family:"Times New Roman",serif;
-	color:#0F4761;
-	font-style:italic;}
-span.Ttulo5Car
-	{mso-style-name:"Título 5 Car";
-	mso-style-link:"Título 5";
-	font-family:"Times New Roman",serif;
-	color:#0F4761;}
-span.Ttulo6Car
-	{mso-style-name:"Título 6 Car";
-	mso-style-link:"Título 6";
-	font-family:"Times New Roman",serif;
-	color:#595959;
-	font-style:italic;}
-span.Ttulo7Car
-	{mso-style-name:"Título 7 Car";
-	mso-style-link:"Título 7";
-	font-family:"Times New Roman",serif;
-	color:#595959;}
-span.Ttulo8Car
-	{mso-style-name:"Título 8 Car";
-	mso-style-link:"Título 8";
-	font-family:"Times New Roman",serif;
-	color:#272727;
-	font-style:italic;}
-span.Ttulo9Car
-	{mso-style-name:"Título 9 Car";
-	mso-style-link:"Título 9";
-	font-family:"Times New Roman",serif;
-	color:#272727;}
-span.TtuloCar
-	{mso-style-name:"Título Car";
-	mso-style-link:Título;
-	font-family:"Aptos Display",sans-serif;
-	letter-spacing:-.5pt;}
-span.SubttuloCar
-	{mso-style-name:"Subtítulo Car";
-	mso-style-link:Subtítulo;
-	font-family:"Times New Roman",serif;
-	color:#595959;
-	letter-spacing:.75pt;}
-span.CitaCar
-	{mso-style-name:"Cita Car";
-	mso-style-link:Cita;
-	color:#404040;
-	font-style:italic;}
-span.CitadestacadaCar
-	{mso-style-name:"Cita destacada Car";
-	mso-style-link:"Cita destacada";
-	color:#0F4761;
-	font-style:italic;}
-.MsoChpDefault
-	{font-family:"Aptos",sans-serif;}
-.MsoPapDefault
-	{margin-bottom:8.0pt;
-	line-height:107%;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Vanta | Cortinas y Persianas de Lujo a Medida CDMX</title>
+    <meta name="description" content="DiseÃ±o e instalaciÃ³n de cortinas y persianas motorizadas de lujo para residencias premium y proyectos institucionales en CDMX. Ticket desde $250,000 MXN.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'vanta-black': '#0a0a0a',
+                        'vanta-charcoal': '#1a1a1a',
+                        'vanta-gold': '#c9a962',
+                        'vanta-gold-light': '#d4b978',
+                        'vanta-cream': '#f5f3ef',
+                        'vanta-gray': '#8a8a8a'
+                    },
+                    fontFamily: {
+                        'serif': ['Cormorant Garamond', 'serif'],
+                        'sans': ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
 
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(10,10,10,0.95) 0%, rgba(26,26,26,0.85) 100%);
+        }
+        
+        .gold-underline {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .gold-underline::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: linear-gradient(90deg, transparent, #c9a962, transparent);
+        }
+
+        .input-luxury {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(201,169,98,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .input-luxury:focus {
+            border-color: #c9a962;
+            background: rgba(255,255,255,0.08);
+            outline: none;
+            box-shadow: 0 0 20px rgba(201,169,98,0.1);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c9a962;
+            border-radius: 4px;
+        }
+    </style>
 </head>
-
-<body lang=ES style='word-wrap:break-word'>
-
-<div class=WordSection1>
-
-<p class=MsoNormal><span lang=DE>&lt;!DOCTYPE html&gt;</span></p>
-
-<p class=MsoNormal><span lang=DE>&lt;html lang=&quot;es-MX&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&lt;head&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;meta charset=&quot;UTF-8&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;meta name=&quot;viewport&quot;
-content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    </span>&lt;title&gt;Casa Vanta |
-Cortinas y Persianas de Lujo a Medida CDMX&lt;/title&gt;</p>
-
-<p class=MsoNormal>    &lt;meta name=&quot;description&quot;
-content=&quot;Diseño e instalación de cortinas y persianas motorizadas de lujo
-para residencias premium y proyectos institucionales en CDMX. <span lang=EN-US>Ticket
-desde $250,000 MXN.&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    </span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;!-- Fonts --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;link rel=&quot;preconnect&quot;
-href=&quot;https://fonts.googleapis.com&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;link rel=&quot;preconnect&quot;
-href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;link
-href=&quot;https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Montserrat:wght@300;400;500;600&amp;display=swap&quot;
-rel=&quot;stylesheet&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    </span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;!-- Tailwind CSS --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;script
-src=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    </span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;script&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        tailwind.config = {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            theme: {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                extend: {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    colors: {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        'vanta-black':
-'#0a0a0a',</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        'vanta-charcoal':
-'#1a1a1a',</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        'vanta-gold':
-'#c9a962',</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        'vanta-gold-light':
-'#d4b978',</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        'vanta-cream':
-'#f5f3ef',</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        'vanta-gray':
-'#8a8a8a'</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    },</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    fontFamily: {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        'serif':
-['Cormorant Garamond', 'serif'],</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        'sans':
-['Montserrat', 'sans-serif']</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;/script&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;style&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        .hero-gradient {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            background:
-linear-gradient(135deg, rgba(10,10,10,0.95) 0%, rgba(26,26,26,0.85) 100%);</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        </span></p>
-
-<p class=MsoNormal><span lang=EN-US>        .gold-underline {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            position: relative;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            display: inline-block;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        </span></p>
-
-<p class=MsoNormal><span lang=EN-US>        .gold-underline::after {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            content: '';</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            position: absolute;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            width: 100%;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            height: 2px;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            bottom: -4px;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            left: 0;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            background:
-linear-gradient(90deg, transparent, #c9a962, transparent);</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        .input-luxury {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            background:
-rgba(255,255,255,0.05);</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            border: 1px solid
-rgba(201,169,98,0.3);</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            transition: all 0.3s ease;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        .input-luxury:focus {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            border-color: #c9a962;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            background:
-rgba(255,255,255,0.08);</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            outline: none;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            box-shadow: 0 0 20px
-rgba(201,169,98,0.1);</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        .reveal {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            opacity: 0;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            transform: translateY(30px);</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            transition: all 0.8s ease;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        .reveal.active {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            opacity: 1;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            transform: translateY(0);</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        .project-card:hover
-.project-overlay {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            opacity: 1;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        .project-card:hover img {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            transform: scale(1.05);</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        /* Custom scrollbar */</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        ::-webkit-scrollbar {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            width: 8px;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        ::-webkit-scrollbar-track {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            background: #0a0a0a;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        ::-webkit-scrollbar-thumb {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            background: #c9a962;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            border-radius: 4px;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;/style&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&lt;/head&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&lt;body class=&quot;bg-vanta-black
-text-vanta-cream font-sans antialiased overflow-x-hidden&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;!-- Navigation --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;nav class=&quot;fixed w-full z-50
-bg-vanta-black/90 backdrop-blur-md border-b border-vanta-gold/20 transition-all
-duration-300&quot; id=&quot;navbar&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;div class=&quot;max-w-7xl
-mx-auto px-6 lg:px-8&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div class=&quot;flex
-justify-between items-center h-20&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div class=&quot;flex
-items-center&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;span
-class=&quot;font-serif text-2xl text-vanta-gold tracking-wider&quot;&gt;CASA
-VANTA&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div class=&quot;hidden
-md:flex items-center space-x-8&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;a
-href=&quot;#proyectos&quot; class=&quot;text-sm tracking-widest
-hover:text-vanta-gold transition-colors&quot;&gt;PROYECTOS&lt;/a&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;a
-href=&quot;#servicios&quot; class=&quot;text-sm tracking-widest
-hover:text-vanta-gold transition-colors&quot;&gt;SERVICIOS&lt;/a&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;a
-href=&quot;#proceso&quot; class=&quot;text-sm tracking-widest
-hover:text-vanta-gold transition-colors&quot;&gt;PROCESO&lt;/a&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;a
-href=&quot;#contacto&quot; class=&quot;px-6 py-2 border border-vanta-gold
-text-vanta-gold text-sm tracking-widest hover:bg-vanta-gold
-hover:text-vanta-black transition-all duration-300&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        COTIZAR PROYECTO</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/a&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;button
-class=&quot;md:hidden text-vanta-gold&quot;
-onclick=&quot;toggleMenu()&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;svg class=&quot;w-6
-h-6&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0
-0 24 24&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;path
-stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;
-stroke-width=&quot;2&quot; d=&quot;M4 6h16M4 12h16M4 18h16&quot;/&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    </span><span lang=FR>&lt;/svg&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>                &lt;/button&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>        &lt;!-- Mobile Menu --&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>        </span><span lang=EN-US>&lt;div
-id=&quot;mobileMenu&quot; class=&quot;hidden md:hidden bg-vanta-charcoal
-border-t border-vanta-gold/20&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div class=&quot;px-6 py-4
-space-y-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;a
-href=&quot;#proyectos&quot; class=&quot;block text-sm tracking-widest
-hover:text-vanta-gold&quot;&gt;PROYECTOS&lt;/a&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;a
-href=&quot;#servicios&quot; class=&quot;block text-sm tracking-widest
-hover:text-vanta-gold&quot;&gt;SERVICIOS&lt;/a&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;a
-href=&quot;#proceso&quot; class=&quot;block text-sm tracking-widest
-hover:text-vanta-gold&quot;&gt;PROCESO&lt;/a&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;a
-href=&quot;#contacto&quot; class=&quot;block text-sm tracking-widest
-text-vanta-gold&quot;&gt;COTIZAR PROYECTO&lt;/a&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;/nav&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;!-- Hero Section --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;section class=&quot;relative
-min-h-screen flex items-center justify-center overflow-hidden&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;!-- Background Image with
-Parallax --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;div class=&quot;absolute
-inset-0 z-0&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            </span><span lang=DE>&lt;img
-src=&quot;https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&amp;q=80&quot;
-</span></p>
-
-<p class=MsoNormal><span lang=DE>                 </span><span lang=EN-US>alt=&quot;Interior
-luxury living room with designer curtains&quot; </span></p>
-
-<p class=MsoNormal><span lang=EN-US>                 class=&quot;w-full h-full
-object-cover opacity-60 scale-110&quot;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                
-id=&quot;heroImage&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div class=&quot;absolute
-inset-0 bg-gradient-to-b from-vanta-black/70 via-vanta-black/50
-to-vanta-black&quot;&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;div class=&quot;relative z-10
-max-w-5xl mx-auto px-6 text-center pt-20&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div class=&quot;reveal
-active&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;p
-class=&quot;text-vanta-gold text-sm tracking-[0.3em] mb-6
-uppercase&quot;&gt;Diseño &amp; Automatización&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;h1
-class=&quot;font-serif text-5xl md:text-7xl lg:text-8xl leading-tight
-mb-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    Cortinas que &lt;br&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;span
-class=&quot;gold-underline italic
-text-vanta-gold&quot;&gt;transforman&lt;/span&gt; espacios</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/h1&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;p class=&quot;text-lg
-md:text-xl text-vanta-gray max-w-2xl mx-auto mb-12 font-light
-leading-relaxed&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    </span>Diseño e
-instalación de cortinas y persianas motorizadas de lujo </p>
-
-<p class=MsoNormal>                    para residencias premium y proyectos
-institucionales en Ciudad de México.</p>
-
-<p class=MsoNormal>                <span lang=EN-US>&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div class=&quot;flex
-flex-col sm:flex-row gap-4 justify-center items-center&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;a
-href=&quot;#contacto&quot; class=&quot;group px-8 py-4 bg-vanta-gold
-text-vanta-black font-medium tracking-wider hover:bg-vanta-gold-light
-transition-all duration-300 flex items-center gap-2&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        SOLICITAR
-COTIZACIÓN</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;svg
-class=&quot;w-4 h-4 group-hover:translate-x-1 transition-transform&quot;
-fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24
-24&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;path
-stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;
-stroke-width=&quot;2&quot; d=&quot;M17 8l4 4m0 0l-4 4m4-4H3&quot;/&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;/svg&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/a&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;a
-href=&quot;#proyectos&quot; class=&quot;px-8 py-4 border border-vanta-cream/30
-text-vanta-cream tracking-wider hover:border-vanta-gold hover:text-vanta-gold
-transition-all duration-300&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        </span>VER
-PROYECTOS</p>
-
-<p class=MsoNormal>                    &lt;/a&gt;</p>
-
-<p class=MsoNormal>                &lt;/div&gt;</p>
-
-<p class=MsoNormal>            &lt;/div&gt;</p>
-
-<p class=MsoNormal>            </p>
-
-<p class=MsoNormal>            <span lang=EN-US>&lt;!-- Trust Indicators --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div class=&quot;mt-20 pt-10
-border-t border-vanta-cream/10 reveal&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div class=&quot;grid
-grid-cols-2 md:grid-cols-4 gap-8 text-center&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;p
-class=&quot;font-serif text-3xl text-vanta-gold&quot;&gt;250+&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;p
-class=&quot;text-xs tracking-widest text-vanta-gray mt-2&quot;&gt;PROYECTOS
-ENTREGADOS&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;p
-class=&quot;font-serif text-3xl text-vanta-gold&quot;&gt;$270k&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;p
-class=&quot;text-xs tracking-widest text-vanta-gray mt-2&quot;&gt;TICKET
-PROMEDIO&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;p
-class=&quot;font-serif text-3xl text-vanta-gold&quot;&gt;15+&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;p
-class=&quot;text-xs tracking-widest text-vanta-gray mt-2&quot;&gt;AÑOS DE
-EXPERIENCIA&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;p
-class=&quot;font-serif text-3xl text-vanta-gold&quot;&gt;CDMX&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;p
-class=&quot;text-xs tracking-widest text-vanta-gray
-mt-2&quot;&gt;COBERTURA&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;!-- Scroll Indicator --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;div class=&quot;absolute
-bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;svg class=&quot;w-6 h-6
-text-vanta-gold&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot;
-viewBox=&quot;0 0 24 24&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;path
-stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;
-stroke-width=&quot;1&quot; d=&quot;M19 14l-7 7m0 0l-7-7m7 7V3&quot;/&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            </span><span lang=FR>&lt;/svg&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>    &lt;/section&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=FR>    &lt;!-- Qualification Banner --&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>    </span><span lang=EN-US>&lt;section
-class=&quot;bg-vanta-charcoal py-8 border-y border-vanta-gold/20&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;div class=&quot;max-w-7xl
-mx-auto px-6 flex flex-col md:flex-row items-center justify-between
-gap-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div class=&quot;flex
-items-center gap-3&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;svg class=&quot;w-6 h-6
-text-vanta-gold&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot;
-viewBox=&quot;0 0 24 24&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;path
-stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;
-stroke-width=&quot;2&quot; d=&quot;M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118
-0z&quot;/&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/svg&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;span
-class=&quot;text-sm tracking-wide&quot;&gt;Proyectos desde &lt;strong
-class=&quot;text-vanta-gold&quot;&gt;$250,000 MXN&lt;/strong&gt;&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div class=&quot;flex
-items-center gap-3&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;svg class=&quot;w-6 h-6
-text-vanta-gold&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot;
-viewBox=&quot;0 0 24 24&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;path
-stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;
-stroke-width=&quot;2&quot; d=&quot;M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118
-0z&quot;/&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/svg&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;span
-class=&quot;text-sm tracking-wide&quot;&gt;Entrega en &lt;strong
-class=&quot;text-vanta-gold&quot;&gt;4-6 semanas&lt;/strong&gt;&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div class=&quot;flex
-items-center gap-3&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;svg class=&quot;w-6 h-6
-text-vanta-gold&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot;
-viewBox=&quot;0 0 24 24&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;path
-stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;
-stroke-width=&quot;2&quot; d=&quot;M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0
-0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824
-10.29 9 11.622 5.176-1.332 9-6.03 9-11.622
-0-1.042-.133-2.052-.382-3.016z&quot;/&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/svg&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;span
-class=&quot;text-sm tracking-wide&quot;&gt;Garantía de &lt;strong
-class=&quot;text-vanta-gold&quot;&gt;5 años&lt;/strong&gt;&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            </span><span lang=FR>&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>    &lt;/section&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=FR>    &lt;!-- Services Section --&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>    </span><span lang=EN-US>&lt;section
-id=&quot;servicios&quot; class=&quot;py-24 bg-vanta-black&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;div class=&quot;max-w-7xl
-mx-auto px-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div class=&quot;text-center
-mb-16 reveal&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;p
-class=&quot;text-vanta-gold text-sm tracking-[0.3em] mb-4
-uppercase&quot;&gt;Nuestros Servicios&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;h2
-class=&quot;font-serif text-4xl md:text-5xl mb-6&quot;&gt;Soluciones integrales
-de &lt;span class=&quot;italic text-vanta-gold&quot;&gt;control
-solar&lt;/span&gt;&lt;/h2&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                </span>&lt;p
-class=&quot;text-vanta-gray max-w-2xl mx-auto&quot;&gt;Especialistas en
-proyectos residenciales de alto standing y espacios institucionales que
-requieren precisión técnica y diseño exclusivo.&lt;/p&gt;</p>
-
-<p class=MsoNormal>            <span lang=EN-US>&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div class=&quot;grid
-md:grid-cols-3 gap-8&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;!-- Service 1 --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div class=&quot;group
-reveal&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;relative overflow-hidden mb-6 aspect-[4/5]&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        </span><span
-lang=DE>&lt;img
-src=&quot;https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&amp;q=80&quot;
-</span></p>
-
-<p class=MsoNormal><span lang=DE>                             </span>alt=&quot;Cortinas
-motorizadas de lujo&quot; </p>
-
-<p class=MsoNormal>                             <span lang=EN-US>class=&quot;w-full
-h-full object-cover transition-transform duration-700
-group-hover:scale-110&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;div
-class=&quot;absolute inset-0 bg-gradient-to-t from-vanta-black/80
-to-transparent opacity-60&quot;&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;div
-class=&quot;absolute bottom-6 left-6 right-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;span
-class=&quot;text-vanta-gold text-xs
-tracking-widest&quot;&gt;AUTOMATIZACIÓN&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;h3
-class=&quot;font-serif text-2xl mb-3 group-hover:text-vanta-gold
-transition-colors&quot;&gt;Cortinas Inteligentes&lt;/h3&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    </span>&lt;p
-class=&quot;text-vanta-gray text-sm leading-relaxed mb-4&quot;&gt;Sistemas
-motorizados con control remoto, app móvil e integración con Alexa, Google Home
-y sistemas domóticos Lutron y Control4.&lt;/p&gt;</p>
-
-<p class=MsoNormal>                    <span lang=EN-US>&lt;ul
-class=&quot;space-y-2 text-sm text-vanta-gray&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;li
-class=&quot;flex items-center gap-2&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;span
-class=&quot;w-1 h-1 bg-vanta-gold rounded-full&quot;&gt;&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            </span>Motores
-silenciosos Somfy y Lutron</p>
-
-<p class=MsoNormal>                        &lt;/li&gt;</p>
-
-<p class=MsoNormal>                        <span lang=EN-US>&lt;li
-class=&quot;flex items-center gap-2&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;span
-class=&quot;w-1 h-1 bg-vanta-gold rounded-full&quot;&gt;&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            </span>Programación
-horaria y sensores</p>
-
-<p class=MsoNormal>                        &lt;/li&gt;</p>
-
-<p class=MsoNormal>                        <span lang=EN-US>&lt;li
-class=&quot;flex items-center gap-2&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;span
-class=&quot;w-1 h-1 bg-vanta-gold rounded-full&quot;&gt;&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            </span>Integración
-con sistemas de iluminación</p>
-
-<p class=MsoNormal>                        &lt;/li&gt;</p>
-
-<p class=MsoNormal>                    <span lang=EN-US>&lt;/ul&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;!-- Service 2 --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div class=&quot;group
-reveal&quot; style=&quot;transition-delay: 100ms;&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;relative overflow-hidden mb-6 aspect-[4/5]&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        </span><span
-lang=DE>&lt;img
-src=&quot;https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&amp;q=80&quot;
-</span></p>
-
-<p class=MsoNormal><span lang=DE>                             </span>alt=&quot;Persianas
-a medida premium&quot; </p>
-
-<p class=MsoNormal>                             <span lang=EN-US>class=&quot;w-full
-h-full object-cover transition-transform duration-700
-group-hover:scale-110&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;div
-class=&quot;absolute inset-0 bg-gradient-to-t from-vanta-black/80
-to-transparent opacity-60&quot;&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;div
-class=&quot;absolute bottom-6 left-6 right-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;span
-class=&quot;text-vanta-gold text-xs tracking-widest&quot;&gt;DISEÑO A
-MEDIDA&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;h3
-class=&quot;font-serif text-2xl mb-3 group-hover:text-vanta-gold
-transition-colors&quot;&gt;Persianas de Diseño&lt;/h3&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;p
-class=&quot;text-vanta-gray text-sm leading-relaxed mb-4&quot;&gt;Sistemas de
-control solar arquitectónico: enrollables, romanas, sheer elegance, paneles
-deslizantes y blackout térmico.&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;ul
-class=&quot;space-y-2 text-sm text-vanta-gray&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;li
-class=&quot;flex items-center gap-2&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;span
-class=&quot;w-1 h-1 bg-vanta-gold rounded-full&quot;&gt;&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            </span>Telas
-europeas de alta durabilidad</p>
-
-<p class=MsoNormal>                        &lt;/li&gt;</p>
-
-<p class=MsoNormal>                        <span lang=EN-US>&lt;li
-class=&quot;flex items-center gap-2&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;span
-class=&quot;w-1 h-1 bg-vanta-gold rounded-full&quot;&gt;&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            </span>Sistemas
-de ocultación total</p>
-
-<p class=MsoNormal>                        &lt;/li&gt;</p>
-
-<p class=MsoNormal>                        <span lang=EN-US>&lt;li
-class=&quot;flex items-center gap-2&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;span
-class=&quot;w-1 h-1 bg-vanta-gold rounded-full&quot;&gt;&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            </span>Asesoría
-de interiorismo incluida</p>
-
-<p class=MsoNormal>                        &lt;/li&gt;</p>
-
-<p class=MsoNormal>                    <span lang=EN-US>&lt;/ul&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;!-- Service 3 --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div class=&quot;group
-reveal&quot; style=&quot;transition-delay: 200ms;&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;relative overflow-hidden mb-6 aspect-[4/5]&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        </span><span
-lang=DE>&lt;img
-src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&amp;q=80&quot;
-</span></p>
-
-<p class=MsoNormal><span lang=DE>                             </span><span
-lang=EN-US>alt=&quot;Proyectos institucionales hoteles&quot; </span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            
-class=&quot;w-full h-full object-cover transition-transform duration-700
-group-hover:scale-110&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;div
-class=&quot;absolute inset-0 bg-gradient-to-t from-vanta-black/80
-to-transparent opacity-60&quot;&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;div
-class=&quot;absolute bottom-6 left-6 right-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;span
-class=&quot;text-vanta-gold text-xs tracking-widest&quot;&gt;PROYECTOS
-CORPORATIVOS&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;h3
-class=&quot;font-serif text-2xl mb-3 group-hover:text-vanta-gold
-transition-colors&quot;&gt;Proyectos Institucionales&lt;/h3&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    </span>&lt;p
-class=&quot;text-vanta-gray text-sm leading-relaxed mb-4&quot;&gt;Soluciones
-para hoteles boutique, hospitales, edificios corporativos y desarrollos
-residenciales de lujo con gestión integral de proyecto.&lt;/p&gt;</p>
-
-<p class=MsoNormal>                    <span lang=EN-US>&lt;ul
-class=&quot;space-y-2 text-sm text-vanta-gray&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;li
-class=&quot;flex items-center gap-2&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;span
-class=&quot;w-1 h-1 bg-vanta-gold rounded-full&quot;&gt;&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            </span>Coordinación
-con arquitectos y diseñadores</p>
-
-<p class=MsoNormal>                        &lt;/li&gt;</p>
-
-<p class=MsoNormal>                        <span lang=EN-US>&lt;li
-class=&quot;flex items-center gap-2&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;span
-class=&quot;w-1 h-1 bg-vanta-gold rounded-full&quot;&gt;&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            </span>Cumplimiento
-normativo y certificaciones</p>
-
-<p class=MsoNormal>                        &lt;/li&gt;</p>
-
-<p class=MsoNormal>                        <span lang=EN-US>&lt;li
-class=&quot;flex items-center gap-2&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;span
-class=&quot;w-1 h-1 bg-vanta-gold rounded-full&quot;&gt;&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            </span>Mantenimiento
-preventivo programado</p>
-
-<p class=MsoNormal>                        &lt;/li&gt;</p>
-
-<p class=MsoNormal>                    &lt;/ul&gt;</p>
-
-<p class=MsoNormal>                <span lang=EN-US>&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;/section&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;!-- Featured Projects --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;section id=&quot;proyectos&quot;
-class=&quot;py-24 bg-vanta-charcoal&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;div class=&quot;max-w-7xl
-mx-auto px-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div class=&quot;flex
-flex-col md:flex-row justify-between items-end mb-16 reveal&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;p
-class=&quot;text-vanta-gold text-sm tracking-[0.3em] mb-4
-uppercase&quot;&gt;Portafolio Selecto&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;h2
-class=&quot;font-serif text-4xl md:text-5xl&quot;&gt;Proyectos &lt;span
-class=&quot;italic text-vanta-gold&quot;&gt;recientes&lt;/span&gt;&lt;/h2&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                </span>&lt;/div&gt;</p>
-
-<p class=MsoNormal>                &lt;p class=&quot;text-vanta-gray max-w-md
-mt-4 md:mt-0 text-sm&quot;&gt;Cada proyecto representa una colaboración cercana
-con clientes que valoran la excelencia en acabados y la precisión
-técnica.&lt;/p&gt;</p>
-
-<p class=MsoNormal>            <span lang=EN-US>&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div class=&quot;grid
-md:grid-cols-2 lg:grid-cols-3 gap-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;!-- Project 1 --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div
-class=&quot;project-card group relative overflow-hidden cursor-pointer
-reveal&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    </span><span lang=DE>&lt;img
-src=&quot;https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&amp;q=80&quot;
-</span></p>
-
-<p class=MsoNormal><span lang=DE>                         </span><span
-lang=EN-US>alt=&quot;Proyecto residencial Polanco&quot; </span></p>
-
-<p class=MsoNormal><span lang=EN-US>                         class=&quot;w-full
-h-96 object-cover transition-transform duration-700&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;project-overlay absolute inset-0 bg-vanta-black/80 opacity-0
-transition-opacity duration-300 flex flex-col justify-end p-8&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;span
-class=&quot;text-vanta-gold text-xs tracking-widest
-mb-2&quot;&gt;RESIDENCIAL&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;h3
-class=&quot;font-serif text-2xl mb-2&quot;&gt;Residencia Polanco&lt;/h3&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        </span>&lt;p
-class=&quot;text-sm text-vanta-gray mb-4&quot;&gt;Sistema integral de cortinas
-motorizadas en penthouse de 450m². <span lang=EN-US>Integración con
-Lutron.&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;span
-class=&quot;text-vanta-gold text-sm flex items-center gap-2 group-hover:gap-4
-transition-all&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            Ver proyecto
-&lt;span class=&quot;text-lg&quot;&gt;&#8594;&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;!-- Project 2 --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div
-class=&quot;project-card group relative overflow-hidden cursor-pointer
-reveal&quot; style=&quot;transition-delay: 100ms;&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    </span><span lang=DE>&lt;img
-src=&quot;https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&amp;q=80&quot;
-</span></p>
-
-<p class=MsoNormal><span lang=DE>                         </span><span
-lang=EN-US>alt=&quot;Hotel boutique CDMX&quot; </span></p>
-
-<p class=MsoNormal><span lang=EN-US>                         class=&quot;w-full
-h-96 object-cover transition-transform duration-700&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;project-overlay absolute inset-0 bg-vanta-black/80 opacity-0
-transition-opacity duration-300 flex flex-col justify-end p-8&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;span
-class=&quot;text-vanta-gold text-xs tracking-widest
-mb-2&quot;&gt;HOTELERÍA&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;h3
-class=&quot;font-serif text-2xl mb-2&quot;&gt;Hotel Boutique Roma
-Norte&lt;/h3&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        </span>&lt;p
-class=&quot;text-sm text-vanta-gray mb-4&quot;&gt;Blackout térmico y cortinas
-sheer para 28 habitaciones. <span lang=EN-US>Control centralizado.&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;span
-class=&quot;text-vanta-gold text-sm flex items-center gap-2 group-hover:gap-4
-transition-all&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            Ver proyecto
-&lt;span class=&quot;text-lg&quot;&gt;&#8594;&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;!-- Project 3 --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div
-class=&quot;project-card group relative overflow-hidden cursor-pointer
-reveal&quot; style=&quot;transition-delay: 200ms;&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    </span><span lang=DE>&lt;img
-src=&quot;https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&amp;q=80&quot;
-</span></p>
-
-<p class=MsoNormal><span lang=DE>                         </span><span
-lang=EN-US>alt=&quot;Departamento Santa Fe&quot; </span></p>
-
-<p class=MsoNormal><span lang=EN-US>                         class=&quot;w-full
-h-96 object-cover transition-transform duration-700&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;project-overlay absolute inset-0 bg-vanta-black/80 opacity-0
-transition-opacity duration-300 flex flex-col justify-end p-8&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;span
-class=&quot;text-venta-gold text-xs tracking-widest
-mb-2&quot;&gt;RESIDENCIAL&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;h3
-class=&quot;font-serif text-2xl mb-2&quot;&gt;Torre Santa Fe&lt;/h3&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        </span>&lt;p
-class=&quot;text-sm text-vanta-gray mb-4&quot;&gt;Persianas enrollables con
-tela solar Hunter Douglas. Vista panorámica preservada.&lt;/p&gt;</p>
-
-<p class=MsoNormal>                        <span lang=EN-US>&lt;span
-class=&quot;text-vanta-gold text-sm flex items-center gap-2 group-hover:gap-4
-transition-all&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            Ver proyecto
-&lt;span class=&quot;text-lg&quot;&gt;&#8594;&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div class=&quot;mt-12
-text-center reveal&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;button class=&quot;px-8
-py-3 border border-vanta-gold/50 text-vanta-gold text-sm tracking-widest
-hover:bg-vanta-gold hover:text-vanta-black transition-all
-duration-300&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    </span>VER PORTAFOLIO
-COMPLETO</p>
-
-<p class=MsoNormal>                &lt;/button&gt;</p>
-
-<p class=MsoNormal>            &lt;/div&gt;</p>
-
-<p class=MsoNormal>        <span lang=EN-US>&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;/section&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;!-- Process Section --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;section id=&quot;proceso&quot;
-class=&quot;py-24 bg-vanta-black relative overflow-hidden&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;div class=&quot;absolute top-0
-right-0 w-1/2 h-full bg-gradient-to-l from-vanta-charcoal/30
-to-transparent&quot;&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        </span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;div class=&quot;max-w-7xl
-mx-auto px-6 relative z-10&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div class=&quot;text-center
-mb-16 reveal&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;p
-class=&quot;text-vanta-gold text-sm tracking-[0.3em] mb-4
-uppercase&quot;&gt;Metodología&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;h2
-class=&quot;font-serif text-4xl md:text-5xl mb-6&quot;&gt;Proceso de &lt;span
-class=&quot;italic text-vanta-gold&quot;&gt;trabajo&lt;/span&gt;&lt;/h2&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div class=&quot;grid
-md:grid-cols-4 gap-8&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div
-class=&quot;relative reveal&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;font-serif text-6xl text-vanta-charcoal absolute -top-6
--left-2&quot;&gt;01&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;relative pt-8 border-t border-vanta-gold/30&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;h3
-class=&quot;font-serif text-xl mb-3 text-vanta-gold&quot;&gt;Consulta
-Inicial&lt;/h3&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        </span>&lt;p
-class=&quot;text-sm text-vanta-gray leading-relaxed&quot;&gt;Evaluación de
-necesidades, visita técnica al espacio y análisis de requerimientos de control
-solar y estética.&lt;/p&gt;</p>
-
-<p class=MsoNormal>                    <span lang=EN-US>&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div
-class=&quot;relative reveal&quot; style=&quot;transition-delay:
-100ms;&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;font-serif text-6xl text-vanta-charcoal absolute -top-6
--left-2&quot;&gt;02&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;relative pt-8 border-t border-vanta-gold/30&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        </span>&lt;h3
-class=&quot;font-serif text-xl mb-3 text-vanta-gold&quot;&gt;Propuesta de
-Diseño&lt;/h3&gt;</p>
-
-<p class=MsoNormal>                        &lt;p class=&quot;text-sm
-text-vanta-gray leading-relaxed&quot;&gt;Presentación de alternativas de telas,
-sistemas y automatización con muestras físicas y renders.&lt;/p&gt;</p>
-
-<p class=MsoNormal>                    <span lang=EN-US>&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div
-class=&quot;relative reveal&quot; style=&quot;transition-delay:
-200ms;&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;font-serif text-6xl text-vanta-charcoal absolute -top-6
--left-2&quot;&gt;03&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;relative pt-8 border-t border-vanta-gold/30&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;h3
-class=&quot;font-serif text-xl mb-3
-text-vanta-gold&quot;&gt;Fabricación&lt;/h3&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        </span>&lt;p
-class=&quot;text-sm text-vanta-gray leading-relaxed&quot;&gt;Producción a
-medida con materiales importados. Control de calidad en cada etapa del
-proceso.&lt;/p&gt;</p>
-
-<p class=MsoNormal>                    <span lang=EN-US>&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div
-class=&quot;relative reveal&quot; style=&quot;transition-delay:
-300ms;&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;font-serif text-6xl text-vanta-charcoal absolute -top-6
--left-2&quot;&gt;04&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;relative pt-8 border-t border-vanta-gold/30&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;h3
-class=&quot;font-serif text-xl mb-3
-text-vanta-gold&quot;&gt;Instalación&lt;/h3&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        </span>&lt;p
-class=&quot;text-sm text-vanta-gray leading-relaxed&quot;&gt;Montaje
-profesional, configuración de sistemas inteligentes y capacitación de uso para
-el cliente.&lt;/p&gt;</p>
-
-<p class=MsoNormal>                    <span lang=FR>&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>    &lt;/section&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=FR>    </span><span lang=EN-US>&lt;!-- Social
-Proof / Testimonials --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;section class=&quot;py-24
-bg-vanta-charcoal&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;div class=&quot;max-w-7xl
-mx-auto px-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div class=&quot;grid
-md:grid-cols-2 gap-12 items-center&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div
-class=&quot;reveal&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;p
-class=&quot;text-vanta-gold text-sm tracking-[0.3em] mb-4
-uppercase&quot;&gt;Testimonios&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;h2
-class=&quot;font-serif text-4xl md:text-5xl mb-8&quot;&gt;Lo que dicen
-&lt;br&gt;nuestros &lt;span class=&quot;italic
-text-vanta-gold&quot;&gt;clientes&lt;/span&gt;&lt;/h2&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    </span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;space-y-8&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;div
-class=&quot;border-l-2 border-vanta-gold pl-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            </span>&lt;p
-class=&quot;text-lg font-light italic mb-4&quot;&gt;&quot;La atención al
-detalle fue excepcional. No solo instalaron cortinas, diseñaron la experiencia
-de luz de nuestro departamento.&quot;&lt;/p&gt;</p>
-
-<p class=MsoNormal>                            <span lang=EN-US>&lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;p
-class=&quot;font-medium text-vanta-gold&quot;&gt;— Arq. Fernanda
-López&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;p
-class=&quot;text-sm text-vanta-gray&quot;&gt;Residencia Lomas de
-Chapultepec&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;div
-class=&quot;border-l-2 border-vanta-gold pl-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;p
-class=&quot;text-lg font-light italic mb-4&quot;&gt;&quot;Profesionalismo
-impecable. </span>Cumplieron con los tiempos de entrega de nuestro hotel y el
-resultado superó expectativas.&quot;&lt;/p&gt;</p>
-
-<p class=MsoNormal>                            <span lang=EN-US>&lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;p
-class=&quot;font-medium text-vanta-gold&quot;&gt;— Carlos Méndez&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;p
-class=&quot;text-sm text-vanta-gray&quot;&gt;Director de Operaciones, Hotel
-Casa Awolly&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div
-class=&quot;reveal&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    </span><span lang=DE>&lt;img
-src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&amp;q=80&quot;
-</span></p>
-
-<p class=MsoNormal><span lang=DE>                         </span>alt=&quot;Cliente
-satisfecho en proyecto de cortinas de lujo&quot; </p>
-
-<p class=MsoNormal>                         <span lang=EN-US>class=&quot;w-full
-h-[600px] object-cover&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;/section&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;!-- Lead Form Section --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;section id=&quot;contacto&quot;
-class=&quot;py-24 bg-vanta-black relative&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;div class=&quot;max-w-4xl
-mx-auto px-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div
-class=&quot;bg-vanta-charcoal p-8 md:p-12 border border-vanta-gold/20
-reveal&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div
-class=&quot;text-center mb-10&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;p
-class=&quot;text-vanta-gold text-sm tracking-[0.3em] mb-4
-uppercase&quot;&gt;Consulta Privada&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;h2
-class=&quot;font-serif text-3xl md:text-4xl mb-4&quot;&gt;Solicita tu &lt;span
-class=&quot;italic text-vanta-gold&quot;&gt;cotización&lt;/span&gt;&lt;/h2&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    </span>&lt;p
-class=&quot;text-vanta-gray&quot;&gt;Completa el formulario para agendar una
-consulta personalizada. Evaluamos proyectos desde $250,000 MXN.&lt;/p&gt;</p>
-
-<p class=MsoNormal>                &lt;/div&gt;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>                &lt;form id=&quot;leadForm&quot;
-class=&quot;space-y-6&quot;&gt;</p>
-
-<p class=MsoNormal>                    <span lang=EN-US>&lt;div
-class=&quot;grid md:grid-cols-2 gap-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;label
-class=&quot;block text-xs tracking-widest text-vanta-gray mb-2
-uppercase&quot;&gt;Nombre completo *&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;input
-type=&quot;text&quot; name=&quot;nombre&quot; required </span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                  
-class=&quot;w-full px-4 py-3 input-luxury text-vanta-cream
-placeholder-vanta-gray/50&quot;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                   </span>placeholder=&quot;Ej.
-María Fernanda López&quot;&gt;</p>
-
-<p class=MsoNormal>                        <span lang=EN-US>&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;label
-class=&quot;block text-xs tracking-widest text-vanta-gray mb-2
-uppercase&quot;&gt;Correo electrónico *&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;input
-type=&quot;email&quot; name=&quot;email&quot; required </span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                  
-class=&quot;w-full px-4 py-3 input-luxury text-vanta-cream
-placeholder-vanta-gray/50&quot;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                  
-placeholder=&quot;nombre@ejemplo.com&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;grid md:grid-cols-2 gap-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;label
-class=&quot;block text-xs tracking-widest text-vanta-gray mb-2
-uppercase&quot;&gt;Teléfono / WhatsApp *&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;input
-type=&quot;tel&quot; name=&quot;telefono&quot; required </span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                  
-class=&quot;w-full px-4 py-3 input-luxury text-vanta-cream
-placeholder-vanta-gray/50&quot;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                  
-placeholder=&quot;55 1234 5678&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;label
-class=&quot;block text-xs tracking-widest text-vanta-gray mb-2
-uppercase&quot;&gt;Zona de CDMX *&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;select
-name=&quot;zona&quot; required class=&quot;w-full px-4 py-3 input-luxury
-text-vanta-cream bg-vanta-charcoal&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;option
-value=&quot;&quot; disabled selected&gt;Selecciona una zona&lt;/option&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;option
-value=&quot;Polanco&quot;&gt;Polanco&lt;/option&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;option
-value=&quot;Lomas&quot;&gt;Lomas de Chapultepec / Virreyes&lt;/option&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;option
-value=&quot;Santa Fe&quot;&gt;Santa Fe&lt;/option&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;option
-value=&quot;Roma/Condesa&quot;&gt;Roma / Condesa&lt;/option&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;option
-value=&quot;Interlomas&quot;&gt;Interlomas / Bosque Real&lt;/option&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                </span>&lt;option
-value=&quot;Pedregal&quot;&gt;Jardines del Pedregal&lt;/option&gt;</p>
-
-<p class=MsoNormal>                                &lt;option
-value=&quot;Otra&quot;&gt;Otra zona&lt;/option&gt;</p>
-
-<p class=MsoNormal>                            <span lang=EN-US>&lt;/select&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;label
-class=&quot;block text-xs tracking-widest text-vanta-gray mb-2
-uppercase&quot;&gt;Tipo de proyecto *&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;div
-class=&quot;grid grid-cols-2 md:grid-cols-4 gap-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;label
-class=&quot;flex items-center gap-2 cursor-pointer group&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;input
-type=&quot;radio&quot; name=&quot;tipo_proyecto&quot;
-value=&quot;residencial&quot; required class=&quot;accent-vanta-gold&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;span
-class=&quot;text-sm group-hover:text-vanta-gold
-transition-colors&quot;&gt;Residencia privada&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;label
-class=&quot;flex items-center gap-2 cursor-pointer group&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;input
-type=&quot;radio&quot; name=&quot;tipo_proyecto&quot;
-value=&quot;departamento&quot; class=&quot;accent-vanta-gold&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;span
-class=&quot;text-sm group-hover:text-vanta-gold
-transition-colors&quot;&gt;Departamento&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;label
-class=&quot;flex items-center gap-2 cursor-pointer group&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;input
-type=&quot;radio&quot; name=&quot;tipo_proyecto&quot; value=&quot;hotel&quot;
-class=&quot;accent-vanta-gold&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;span
-class=&quot;text-sm group-hover:text-vanta-gold
-transition-colors&quot;&gt;Hotel / Boutique&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;label
-class=&quot;flex items-center gap-2 cursor-pointer group&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;input
-type=&quot;radio&quot; name=&quot;tipo_proyecto&quot;
-value=&quot;corporativo&quot; class=&quot;accent-vanta-gold&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;span
-class=&quot;text-sm group-hover:text-vanta-gold
-transition-colors&quot;&gt;Corporativo&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;label
-class=&quot;block text-xs tracking-widest text-vanta-gray mb-2
-uppercase&quot;&gt;Presupuesto estimado *&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;select
-name=&quot;presupuesto&quot; required class=&quot;w-full px-4 py-3 input-luxury
-text-vanta-cream bg-vanta-charcoal&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;option
-value=&quot;&quot; disabled selected&gt;Selecciona rango de
-inversión&lt;/option&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;option
-value=&quot;250-500&quot;&gt;$250,000 - $500,000 MXN&lt;/option&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;option
-value=&quot;500-1M&quot;&gt;$500,000 - $1,000,000 MXN&lt;/option&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;option
-value=&quot;1M+&quot;&gt;Más de $1,000,000 MXN&lt;/option&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;/select&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;p
-class=&quot;text-xs text-vanta-gray mt-2 italic&quot;&gt;* Proyectos mínimos de
-$250,000 MXN&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;label
-class=&quot;block text-xs tracking-widest text-vanta-gray mb-2
-uppercase&quot;&gt;Detalles del proyecto&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;textarea
-name=&quot;mensaje&quot; rows=&quot;4&quot; </span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                 
-class=&quot;w-full px-4 py-3 input-luxury text-vanta-cream
-placeholder-vanta-gray/50 resize-none&quot;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                  </span>placeholder=&quot;Describe
-tu proyecto: número de ventanas, tipo de solución requerida
-(motorizadas/manuales), necesidades específicas de control
-solar...&quot;&gt;&lt;/textarea&gt;</p>
-
-<p class=MsoNormal>                    <span lang=EN-US>&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;flex items-start gap-3&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;input
-type=&quot;checkbox&quot; id=&quot;privacy&quot; required class=&quot;mt-1
-accent-vanta-gold&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;label
-for=&quot;privacy&quot; class=&quot;text-xs text-vanta-gray leading-relaxed
-cursor-pointer&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            </span>Acepto
-que Casa Vanta se comunique conmigo vía WhatsApp o correo para agendar una
-consulta. </p>
-
-<p class=MsoNormal>                            Entiendo que este es un servicio
-premium para proyectos de alto valor.</p>
-
-<p class=MsoNormal>                        <span lang=EN-US>&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;button
-type=&quot;submit&quot; </span></p>
-
-<p class=MsoNormal><span lang=EN-US>                           
-class=&quot;w-full py-4 bg-vanta-gold text-vanta-black font-medium
-tracking-widest hover:bg-vanta-gold-light transition-all duration-300 flex
-items-center justify-center gap-2 group&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        SOLICITAR CONSULTA
-PRIVADA</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;svg
-class=&quot;w-4 h-4 group-hover:translate-x-1 transition-transform&quot;
-fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24
-24&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;path
-stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;
-stroke-width=&quot;2&quot; d=&quot;M17 8l4 4m0 0l-4 4m4-4H3&quot;/&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;/svg&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/button&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;flex items-center justify-center gap-6 pt-4 border-t
-border-vanta-cream/10&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;div
-class=&quot;flex items-center gap-2 text-xs text-vanta-gray&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;svg
-class=&quot;w-4 h-4 text-vanta-gold&quot; fill=&quot;currentColor&quot;
-viewBox=&quot;0 0 20 20&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;path
-fill-rule=&quot;evenodd&quot; d=&quot;M10 18a8 8 0 100-16 8 8 0 000
-16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414
-1.414l2 2a1 1 0 001.414 0l4-4z&quot; clip-rule=&quot;evenodd&quot;/&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            </span>&lt;/svg&gt;</p>
-
-<p class=MsoNormal>                            Respuesta en 24h</p>
-
-<p class=MsoNormal>                        &lt;/div&gt;</p>
-
-<p class=MsoNormal>                        <span lang=EN-US>&lt;div
-class=&quot;flex items-center gap-2 text-xs text-vanta-gray&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;svg
-class=&quot;w-4 h-4 text-vanta-gold&quot; fill=&quot;currentColor&quot;
-viewBox=&quot;0 0 20 20&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;path
-fill-rule=&quot;evenodd&quot; d=&quot;M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0
-01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z&quot;
-clip-rule=&quot;evenodd&quot;/&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            </span>&lt;/svg&gt;</p>
-
-<p class=MsoNormal>                            Información confidencial</p>
-
-<p class=MsoNormal>                        &lt;/div&gt;</p>
-
-<p class=MsoNormal>                    &lt;/div&gt;</p>
-
-<p class=MsoNormal>                <span lang=EN-US>&lt;/form&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;/section&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;!-- WhatsApp Floating Button --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;a
-href=&quot;https://wa.me/521XXXXXXXXXX&quot; target=&quot;_blank&quot; </span></p>
-
-<p class=MsoNormal><span lang=EN-US>       class=&quot;fixed bottom-8 right-8
-z-50 bg-green-600 text-white p-4 rounded-full shadow-2xl hover:bg-green-700
-transition-all duration-300 hover:scale-110 flex items-center gap-2
-group&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;svg class=&quot;w-6 h-6&quot;
-fill=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;path d=&quot;M17.472
-14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94
-1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198
-0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213
-3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227
-1.36.195 1.871.118.571-.085 1.758-.719
-2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421
-7.403h-.004a9.87 9.87 0
-01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0
-01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988
-2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885
-9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0
-2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683
-1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0
-00-3.48-8.413Z&quot;/&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;/svg&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;span class=&quot;max-w-0
-overflow-hidden group-hover:max-w-xs transition-all duration-300
-whitespace-nowrap text-sm font-medium&quot;&gt;Asesoría por
-WhatsApp&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;/a&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;!-- Footer --&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;footer class=&quot;bg-vanta-black
-border-t border-vanta-gold/20 pt-16 pb-8&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;div class=&quot;max-w-7xl
-mx-auto px-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div class=&quot;grid
-md:grid-cols-4 gap-12 mb-12&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;span
-class=&quot;font-serif text-2xl text-vanta-gold tracking-wider block
-mb-4&quot;&gt;CASA VANTA&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    </span>&lt;p
-class=&quot;text-sm text-vanta-gray leading-relaxed&quot;&gt;Diseño e
-instalación de cortinas y persianas de lujo para proyectos residenciales e
-institucionales en Ciudad de México.&lt;/p&gt;</p>
-
-<p class=MsoNormal>                <span lang=EN-US>&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                </span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;h4
-class=&quot;text-sm tracking-widest text-vanta-gold mb-4
-uppercase&quot;&gt;Servicios&lt;/h4&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;ul
-class=&quot;space-y-2 text-sm text-vanta-gray&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;li&gt;&lt;a
-href=&quot;#&quot; class=&quot;hover:text-vanta-gold
-transition-colors&quot;&gt;Cortinas Motorizadas&lt;/a&gt;&lt;/li&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;li&gt;&lt;a
-href=&quot;#&quot; class=&quot;hover:text-vanta-gold
-transition-colors&quot;&gt;Persianas Inteligentes&lt;/a&gt;&lt;/li&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;li&gt;&lt;a
-href=&quot;#&quot; class=&quot;hover:text-vanta-gold
-transition-colors&quot;&gt;Control Solar Arquitectónico&lt;/a&gt;&lt;/li&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;li&gt;&lt;a
-href=&quot;#&quot; class=&quot;hover:text-vanta-gold
-transition-colors&quot;&gt;Proyectos Institucionales&lt;/a&gt;&lt;/li&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/ul&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;h4
-class=&quot;text-sm tracking-widest text-vanta-gold mb-4
-uppercase&quot;&gt;Contacto&lt;/h4&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;ul
-class=&quot;space-y-2 text-sm text-vanta-gray&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        </span>&lt;li&gt;Ciudad
-de México, México&lt;/li&gt;</p>
-
-<p class=MsoNormal>                       
-&lt;li&gt;info@casa-vanta.com&lt;/li&gt;</p>
-
-<p class=MsoNormal>                        <span lang=FR>&lt;li&gt;+52 55 XXXX
-XXXX&lt;/li&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>                        &lt;li
-class=&quot;pt-2&quot;&gt;Lun - Vie: 9:00 - 18:00&lt;/li&gt;</span></p>
-
-<p class=MsoNormal><span lang=FR>                    </span><span lang=EN-US>&lt;/ul&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;h4
-class=&quot;text-sm tracking-widest text-vanta-gold mb-4
-uppercase&quot;&gt;Legal&lt;/h4&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;ul
-class=&quot;space-y-2 text-sm text-vanta-gray&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;li&gt;&lt;a
-href=&quot;#&quot; class=&quot;hover:text-vanta-gold
-transition-colors&quot;&gt;Aviso de Privacidad&lt;/a&gt;&lt;/li&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;li&gt;&lt;a
-href=&quot;#&quot; class=&quot;hover:text-vanta-gold
-transition-colors&quot;&gt;Términos y Condiciones&lt;/a&gt;&lt;/li&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/ul&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;div class=&quot;border-t
-border-vanta-cream/10 pt-8 flex flex-col md:flex-row justify-between
-items-center gap-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;p class=&quot;text-xs
-text-vanta-gray&quot;&gt;© 2024 Casa Vanta. Todos los derechos
-reservados.&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;div class=&quot;flex
-gap-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;a
-href=&quot;#&quot; class=&quot;text-vanta-gray hover:text-vanta-gold
-transition-colors&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;span
-class=&quot;sr-only&quot;&gt;Instagram&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;svg
-class=&quot;w-5 h-5&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 24
-24&quot;&gt;&lt;path d=&quot;M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148
-4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069
-4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204
-0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849
-0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057
-1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78
-2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2
-4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014
-4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948
-0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0
-5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759
-6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4
-0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796
-0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645
-1.439-1.44s-.644-1.44-1.439-1.44z&quot;/&gt;&lt;/svg&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/a&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;a
-href=&quot;#&quot; class=&quot;text-vanta-gray hover:text-vanta-gold
-transition-colors&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;span
-class=&quot;sr-only&quot;&gt;LinkedIn&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;svg
-class=&quot;w-5 h-5&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 24
-24&quot;&gt;&lt;path d=&quot;M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5
-5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966
-0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75
-1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4
-0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7
-2.476v6.759z&quot;/&gt;&lt;/svg&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;/a&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;/footer&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>    &lt;script&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        // Scroll Reveal Animation</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        const observerOptions = {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            root: null,</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            rootMargin: '0px',</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            threshold: 0.1</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        };</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        const observer = new
-IntersectionObserver((entries) =&gt; {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            entries.forEach(entry =&gt; {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                if (entry.isIntersecting) {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                   
-entry.target.classList.add('active');</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            });</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        }, observerOptions);</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>       
-document.querySelectorAll('.reveal').forEach((el) =&gt; observer.observe(el));</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        // Navbar Scroll Effect</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        window.addEventListener('scroll',
-() =&gt; {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            const navbar =
-document.getElementById('navbar');</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            if (window.scrollY &gt; 50) {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>               
-navbar.classList.add('bg-vanta-black/95', 'shadow-lg');</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            } else {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>               
-navbar.classList.remove('bg-vanta-black/95', 'shadow-lg');</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            </span><span lang=FR>}</span></p>
-
-<p class=MsoNormal><span lang=FR>        });</span></p>
-
-<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=FR>        // Mobile Menu Toggle</span></p>
-
-<p class=MsoNormal><span lang=FR>        function toggleMenu() {</span></p>
-
-<p class=MsoNormal><span lang=FR>            const menu =
-document.getElementById('mobileMenu');</span></p>
-
-<p class=MsoNormal><span lang=FR>            </span><span lang=EN-US>menu.classList.toggle('hidden');</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        // Parallax Effect for Hero</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        window.addEventListener('scroll',
-() =&gt; {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            const scrolled =
-window.pageYOffset;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            const heroImage =
-document.getElementById('heroImage');</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            if (heroImage) {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                heroImage.style.transform =
-`translateY(${scrolled * 0.5}px) scale(1.1)`;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        });</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        // Form Submission Handler</span></p>
-
-<p class=MsoNormal><span lang=EN-US>       
-document.getElementById('leadForm').addEventListener('submit', function(e) {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            </span>e.preventDefault();</p>
-
-<p class=MsoNormal>            </p>
-
-<p class=MsoNormal>            // Aquí iría la lógica de envío al CRM/Email</p>
-
-<p class=MsoNormal>            // Por ahora mostramos un mensaje de éxito</p>
-
-<p class=MsoNormal>            </p>
-
-<p class=MsoNormal>            <span lang=EN-US>const form = this;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            const submitBtn =
-form.querySelector('button[type=&quot;submit&quot;]');</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            const originalText =
-submitBtn.innerHTML;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            </span></p>
-
-<p class=MsoNormal><span lang=EN-US>            submitBtn.innerHTML =
-'ENVIANDO...';</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            submitBtn.disabled = true;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            </span></p>
-
-<p class=MsoNormal><span lang=EN-US>            setTimeout(() =&gt; {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                form.innerHTML = `</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    &lt;div
-class=&quot;text-center py-12&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;div
-class=&quot;w-16 h-16 bg-vanta-gold rounded-full flex items-center
-justify-center mx-auto mb-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;svg
-class=&quot;w-8 h-8 text-vanta-black&quot; fill=&quot;none&quot;
-stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                                &lt;path
-stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;
-stroke-width=&quot;3&quot; d=&quot;M5 13l4 4L19 7&quot;/&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                            &lt;/svg&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        &lt;h3
-class=&quot;font-serif text-2xl text-vanta-gold mb-4&quot;&gt;Solicitud
-Recibida&lt;/h3&gt;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        </span>&lt;p
-class=&quot;text-vanta-gray mb-6&quot;&gt;Hemos recibido tu información. Un
-asesor se pondrá en contacto contigo dentro de las próximas 24 horas para
-agendar tu consulta privada.&lt;/p&gt;</p>
-
-<p class=MsoNormal>                        &lt;p class=&quot;text-sm
-text-vanta-gray&quot;&gt;Mientras tanto, puedes contactarnos directamente por
-WhatsApp para una atención inmediata.&lt;/p&gt;</p>
-
-<p class=MsoNormal>                    &lt;/div&gt;</p>
-
-<p class=MsoNormal>                `;</p>
-
-<p class=MsoNormal>                </p>
-
-<p class=MsoNormal>                // Aquí se dispararía el evento de
-conversión para Google Ads</p>
-
-<p class=MsoNormal>                <span lang=EN-US>if (typeof gtag !==
-'undefined') {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    gtag('event',
-'conversion', {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        'send_to':
-'AW-XXXXXXXX/XXXXXXXX',</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        'value': 250000.0,</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        'currency': 'MXN'</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    });</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            }, 1500);</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        });</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>        // Smooth Scroll for Anchor Links</span></p>
-
-<p class=MsoNormal><span lang=EN-US>       
-document.querySelectorAll('a[href^=&quot;#&quot;]').forEach(anchor =&gt; {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>           
-anchor.addEventListener('click', function (e) {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                e.preventDefault();</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                const target =
-document.querySelector(this.getAttribute('href'));</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                if (target) {</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    target.scrollIntoView({</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        behavior: 'smooth',</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                        block: 'start'</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    });</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                    // Close mobile menu if
-open</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                   
-document.getElementById('mobileMenu').classList.add('hidden');</span></p>
-
-<p class=MsoNormal><span lang=EN-US>                }</span></p>
-
-<p class=MsoNormal><span lang=EN-US>            </span>});</p>
-
-<p class=MsoNormal>        });</p>
-
-<p class=MsoNormal>    &lt;/script&gt;</p>
-
-<p class=MsoNormal>&lt;/body&gt;</p>
-
-<p class=MsoNormal>&lt;/html&gt;</p>
-
-</div>
-
+<body class="bg-vanta-black text-vanta-cream font-sans antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-vanta-black/90 backdrop-blur-md border-b border-vanta-gold/20 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <span class="font-serif text-2xl text-vanta-gold tracking-wider">CASA VANTA</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#proyectos" class="text-sm tracking-widest hover:text-vanta-gold transition-colors">PROYECTOS</a>
+                    <a href="#servicios" class="text-sm tracking-widest hover:text-vanta-gold transition-colors">SERVICIOS</a>
+                    <a href="#proceso" class="text-sm tracking-widest hover:text-vanta-gold transition-colors">PROCESO</a>
+                    <a href="#contacto" class="px-6 py-2 border border-vanta-gold text-vanta-gold text-sm tracking-widest hover:bg-vanta-gold hover:text-vanta-black transition-all duration-300">
+                        COTIZAR PROYECTO
+                    </a>
+                </div>
+                <button class="md:hidden text-vanta-gold" onclick="toggleMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-vanta-charcoal border-t border-vanta-gold/20">
+            <div class="px-6 py-4 space-y-4">
+                <a href="#proyectos" class="block text-sm tracking-widest hover:text-vanta-gold">PROYECTOS</a>
+                <a href="#servicios" class="block text-sm tracking-widest hover:text-vanta-gold">SERVICIOS</a>
+                <a href="#proceso" class="block text-sm tracking-widest hover:text-vanta-gold">PROCESO</a>
+                <a href="#contacto" class="block text-sm tracking-widest text-vanta-gold">COTIZAR PROYECTO</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image with Parallax -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80" 
+                 alt="Interior luxury living room with designer curtains" 
+                 class="w-full h-full object-cover opacity-60 scale-110"
+                 id="heroImage">
+            <div class="absolute inset-0 bg-gradient-to-b from-vanta-black/70 via-vanta-black/50 to-vanta-black"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center pt-20">
+            <div class="reveal active">
+                <p class="text-vanta-gold text-sm tracking-[0.3em] mb-6 uppercase">DiseÃ±o & AutomatizaciÃ³n</p>
+                <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl leading-tight mb-6">
+                    Cortinas que <br>
+                    <span class="gold-underline italic text-vanta-gold">transforman</span> espacios
+                </h1>
+                <p class="text-lg md:text-xl text-vanta-gray max-w-2xl mx-auto mb-12 font-light leading-relaxed">
+                    DiseÃ±o e instalaciÃ³n de cortinas y persianas motorizadas de lujo 
+                    para residencias premium y proyectos institucionales en Ciudad de MÃ©xico.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#contacto" class="group px-8 py-4 bg-vanta-gold text-vanta-black font-medium tracking-wider hover:bg-vanta-gold-light transition-all duration-300 flex items-center gap-2">
+                        SOLICITAR COTIZACIÃ“N
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                    <a href="#proyectos" class="px-8 py-4 border border-vanta-cream/30 text-vanta-cream tracking-wider hover:border-vanta-gold hover:text-vanta-gold transition-all duration-300">
+                        VER PROYECTOS
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Trust Indicators -->
+            <div class="mt-20 pt-10 border-t border-vanta-cream/10 reveal">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <p class="font-serif text-3xl text-vanta-gold">250+</p>
+                        <p class="text-xs tracking-widest text-vanta-gray mt-2">PROYECTOS ENTREGADOS</p>
+                    </div>
+                    <div>
+                        <p class="font-serif text-3xl text-vanta-gold">$270k</p>
+                        <p class="text-xs tracking-widest text-vanta-gray mt-2">TICKET PROMEDIO</p>
+                    </div>
+                    <div>
+                        <p class="font-serif text-3xl text-vanta-gold">15+</p>
+                        <p class="text-xs tracking-widest text-vanta-gray mt-2">AÃ‘OS DE EXPERIENCIA</p>
+                    </div>
+                    <div>
+                        <p class="font-serif text-3xl text-vanta-gold">CDMX</p>
+                        <p class="text-xs tracking-widest text-vanta-gray mt-2">COBERTURA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-vanta-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Qualification Banner -->
+    <section class="bg-vanta-charcoal py-8 border-y border-vanta-gold/20">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <svg class="w-6 h-6 text-vanta-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span class="text-sm tracking-wide">Proyectos desde <strong class="text-vanta-gold">$250,000 MXN</strong></span>
+            </div>
+            <div class="flex items-center gap-3">
+                <svg class="w-6 h-6 text-vanta-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span class="text-sm tracking-wide">Entrega en <strong class="text-vanta-gold">4-6 semanas</strong></span>
+            </div>
+            <div class="flex items-center gap-3">
+                <svg class="w-6 h-6 text-vanta-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                </svg>
+                <span class="text-sm tracking-wide">GarantÃ­a de <strong class="text-vanta-gold">5 aÃ±os</strong></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-24 bg-vanta-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <p class="text-vanta-gold text-sm tracking-[0.3em] mb-4 uppercase">Nuestros Servicios</p>
+                <h2 class="font-serif text-4xl md:text-5xl mb-6">Soluciones integrales de <span class="italic text-vanta-gold">control solar</span></h2>
+                <p class="text-vanta-gray max-w-2xl mx-auto">Especialistas en proyectos residenciales de alto standing y espacios institucionales que requieren precisiÃ³n tÃ©cnica y diseÃ±o exclusivo.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="group reveal">
+                    <div class="relative overflow-hidden mb-6 aspect-[4/5]">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" 
+                             alt="Cortinas motorizadas de lujo" 
+                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-vanta-black/80 to-transparent opacity-60"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="text-vanta-gold text-xs tracking-widest">AUTOMATIZACIÃ“N</span>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-3 group-hover:text-vanta-gold transition-colors">Cortinas Inteligentes</h3>
+                    <p class="text-vanta-gray text-sm leading-relaxed mb-4">Sistemas motorizados con control remoto, app mÃ³vil e integraciÃ³n con Alexa, Google Home y sistemas domÃ³ticos Lutron y Control4.</p>
+                    <ul class="space-y-2 text-sm text-vanta-gray">
+                        <li class="flex items-center gap-2">
+                            <span class="w-1 h-1 bg-vanta-gold rounded-full"></span>
+                            Motores silenciosos Somfy y Lutron
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-1 h-1 bg-vanta-gold rounded-full"></span>
+                            ProgramaciÃ³n horaria y sensores
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-1 h-1 bg-vanta-gold rounded-full"></span>
+                            IntegraciÃ³n con sistemas de iluminaciÃ³n
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="group reveal" style="transition-delay: 100ms;">
+                    <div class="relative overflow-hidden mb-6 aspect-[4/5]">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80" 
+                             alt="Persianas a medida premium" 
+                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-vanta-black/80 to-transparent opacity-60"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="text-vanta-gold text-xs tracking-widest">DISEÃ‘O A MEDIDA</span>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-3 group-hover:text-vanta-gold transition-colors">Persianas de DiseÃ±o</h3>
+                    <p class="text-vanta-gray text-sm leading-relaxed mb-4">Sistemas de control solar arquitectÃ³nico: enrollables, romanas, sheer elegance, paneles deslizantes y blackout tÃ©rmico.</p>
+                    <ul class="space-y-2 text-sm text-vanta-gray">
+                        <li class="flex items-center gap-2">
+                            <span class="w-1 h-1 bg-vanta-gold rounded-full"></span>
+                            Telas europeas de alta durabilidad
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-1 h-1 bg-vanta-gold rounded-full"></span>
+                            Sistemas de ocultaciÃ³n total
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-1 h-1 bg-vanta-gold rounded-full"></span>
+                            AsesorÃ­a de interiorismo incluida
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group reveal" style="transition-delay: 200ms;">
+                    <div class="relative overflow-hidden mb-6 aspect-[4/5]">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" 
+                             alt="Proyectos institucionales hoteles" 
+                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-vanta-black/80 to-transparent opacity-60"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="text-vanta-gold text-xs tracking-widest">PROYECTOS CORPORATIVOS</span>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-3 group-hover:text-vanta-gold transition-colors">Proyectos Institucionales</h3>
+                    <p class="text-vanta-gray text-sm leading-relaxed mb-4">Soluciones para hoteles boutique, hospitales, edificios corporativos y desarrollos residenciales de lujo con gestiÃ³n integral de proyecto.</p>
+                    <ul class="space-y-2 text-sm text-vanta-gray">
+                        <li class="flex items-center gap-2">
+                            <span class="w-1 h-1 bg-vanta-gold rounded-full"></span>
+                            CoordinaciÃ³n con arquitectos y diseÃ±adores
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-1 h-1 bg-vanta-gold rounded-full"></span>
+                            Cumplimiento normativo y certificaciones
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-1 h-1 bg-vanta-gold rounded-full"></span>
+                            Mantenimiento preventivo programado
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="proyectos" class="py-24 bg-vanta-charcoal">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 reveal">
+                <div>
+                    <p class="text-vanta-gold text-sm tracking-[0.3em] mb-4 uppercase">Portafolio Selecto</p>
+                    <h2 class="font-serif text-4xl md:text-5xl">Proyectos <span class="italic text-vanta-gold">recientes</span></h2>
+                </div>
+                <p class="text-vanta-gray max-w-md mt-4 md:mt-0 text-sm">Cada proyecto representa una colaboraciÃ³n cercana con clientes que valoran la excelencia en acabados y la precisiÃ³n tÃ©cnica.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="project-card group relative overflow-hidden cursor-pointer reveal">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80" 
+                         alt="Proyecto residencial Polanco" 
+                         class="w-full h-96 object-cover transition-transform duration-700">
+                    <div class="project-overlay absolute inset-0 bg-vanta-black/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8">
+                        <span class="text-vanta-gold text-xs tracking-widest mb-2">RESIDENCIAL</span>
+                        <h3 class="font-serif text-2xl mb-2">Residencia Polanco</h3>
+                        <p class="text-sm text-vanta-gray mb-4">Sistema integral de cortinas motorizadas en penthouse de 450mÂ². IntegraciÃ³n con Lutron.</p>
+                        <span class="text-vanta-gold text-sm flex items-center gap-2 group-hover:gap-4 transition-all">
+                            Ver proyecto <span class="text-lg">â†’</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card group relative overflow-hidden cursor-pointer reveal" style="transition-delay: 100ms;">
+                    <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&q=80" 
+                         alt="Hotel boutique CDMX" 
+                         class="w-full h-96 object-cover transition-transform duration-700">
+                    <div class="project-overlay absolute inset-0 bg-vanta-black/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8">
+                        <span class="text-vanta-gold text-xs tracking-widest mb-2">HOTELERÃA</span>
+                        <h3 class="font-serif text-2xl mb-2">Hotel Boutique Roma Norte</h3>
+                        <p class="text-sm text-vanta-gray mb-4">Blackout tÃ©rmico y cortinas sheer para 28 habitaciones. Control centralizado.</p>
+                        <span class="text-vanta-gold text-sm flex items-center gap-2 group-hover:gap-4 transition-all">
+                            Ver proyecto <span class="text-lg">â†’</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card group relative overflow-hidden cursor-pointer reveal" style="transition-delay: 200ms;">
+                    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80" 
+                         alt="Departamento Santa Fe" 
+                         class="w-full h-96 object-cover transition-transform duration-700">
+                    <div class="project-overlay absolute inset-0 bg-vanta-black/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8">
+                        <span class="text-venta-gold text-xs tracking-widest mb-2">RESIDENCIAL</span>
+                        <h3 class="font-serif text-2xl mb-2">Torre Santa Fe</h3>
+                        <p class="text-sm text-vanta-gray mb-4">Persianas enrollables con tela solar Hunter Douglas. Vista panorÃ¡mica preservada.</p>
+                        <span class="text-vanta-gold text-sm flex items-center gap-2 group-hover:gap-4 transition-all">
+                            Ver proyecto <span class="text-lg">â†’</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center reveal">
+                <button class="px-8 py-3 border border-vanta-gold/50 text-vanta-gold text-sm tracking-widest hover:bg-vanta-gold hover:text-vanta-black transition-all duration-300">
+                    VER PORTAFOLIO COMPLETO
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="proceso" class="py-24 bg-vanta-black relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-vanta-charcoal/30 to-transparent"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 reveal">
+                <p class="text-vanta-gold text-sm tracking-[0.3em] mb-4 uppercase">MetodologÃ­a</p>
+                <h2 class="font-serif text-4xl md:text-5xl mb-6">Proceso de <span class="italic text-vanta-gold">trabajo</span></h2>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="relative reveal">
+                    <div class="font-serif text-6xl text-vanta-charcoal absolute -top-6 -left-2">01</div>
+                    <div class="relative pt-8 border-t border-vanta-gold/30">
+                        <h3 class="font-serif text-xl mb-3 text-vanta-gold">Consulta Inicial</h3>
+                        <p class="text-sm text-vanta-gray leading-relaxed">EvaluaciÃ³n de necesidades, visita tÃ©cnica al espacio y anÃ¡lisis de requerimientos de control solar y estÃ©tica.</p>
+                    </div>
+                </div>
+
+                <div class="relative reveal" style="transition-delay: 100ms;">
+                    <div class="font-serif text-6xl text-vanta-charcoal absolute -top-6 -left-2">02</div>
+                    <div class="relative pt-8 border-t border-vanta-gold/30">
+                        <h3 class="font-serif text-xl mb-3 text-vanta-gold">Propuesta de DiseÃ±o</h3>
+                        <p class="text-sm text-vanta-gray leading-relaxed">PresentaciÃ³n de alternativas de telas, sistemas y automatizaciÃ³n con muestras fÃ­sicas y renders.</p>
+                    </div>
+                </div>
+
+                <div class="relative reveal" style="transition-delay: 200ms;">
+                    <div class="font-serif text-6xl text-vanta-charcoal absolute -top-6 -left-2">03</div>
+                    <div class="relative pt-8 border-t border-vanta-gold/30">
+                        <h3 class="font-serif text-xl mb-3 text-vanta-gold">FabricaciÃ³n</h3>
+                        <p class="text-sm text-vanta-gray leading-relaxed">ProducciÃ³n a medida con materiales importados. Control de calidad en cada etapa del proceso.</p>
+                    </div>
+                </div>
+
+                <div class="relative reveal" style="transition-delay: 300ms;">
+                    <div class="font-serif text-6xl text-vanta-charcoal absolute -top-6 -left-2">04</div>
+                    <div class="relative pt-8 border-t border-vanta-gold/30">
+                        <h3 class="font-serif text-xl mb-3 text-vanta-gold">InstalaciÃ³n</h3>
+                        <p class="text-sm text-vanta-gray leading-relaxed">Montaje profesional, configuraciÃ³n de sistemas inteligentes y capacitaciÃ³n de uso para el cliente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Testimonials -->
+    <section class="py-24 bg-vanta-charcoal">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                    <p class="text-vanta-gold text-sm tracking-[0.3em] mb-4 uppercase">Testimonios</p>
+                    <h2 class="font-serif text-4xl md:text-5xl mb-8">Lo que dicen <br>nuestros <span class="italic text-vanta-gold">clientes</span></h2>
+                    
+                    <div class="space-y-8">
+                        <div class="border-l-2 border-vanta-gold pl-6">
+                            <p class="text-lg font-light italic mb-4">"La atenciÃ³n al detalle fue excepcional. No solo instalaron cortinas, diseÃ±aron la experiencia de luz de nuestro departamento."</p>
+                            <div>
+                                <p class="font-medium text-vanta-gold">â€” Arq. Fernanda LÃ³pez</p>
+                                <p class="text-sm text-vanta-gray">Residencia Lomas de Chapultepec</p>
+                            </div>
+                        </div>
+
+                        <div class="border-l-2 border-vanta-gold pl-6">
+                            <p class="text-lg font-light italic mb-4">"Profesionalismo impecable. Cumplieron con los tiempos de entrega de nuestro hotel y el resultado superÃ³ expectativas."</p>
+                            <div>
+                                <p class="font-medium text-vanta-gold">â€” Carlos MÃ©ndez</p>
+                                <p class="text-sm text-vanta-gray">Director de Operaciones, Hotel Casa Awolly</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" 
+                         alt="Cliente satisfecho en proyecto de cortinas de lujo" 
+                         class="w-full h-[600px] object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Form Section -->
+    <section id="contacto" class="py-24 bg-vanta-black relative">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-vanta-charcoal p-8 md:p-12 border border-vanta-gold/20 reveal">
+                <div class="text-center mb-10">
+                    <p class="text-vanta-gold text-sm tracking-[0.3em] mb-4 uppercase">Consulta Privada</p>
+                    <h2 class="font-serif text-3xl md:text-4xl mb-4">Solicita tu <span class="italic text-vanta-gold">cotizaciÃ³n</span></h2>
+                    <p class="text-vanta-gray">Completa el formulario para agendar una consulta personalizada. Evaluamos proyectos desde $250,000 MXN.</p>
+                </div>
+
+                <form id="leadForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs tracking-widest text-vanta-gray mb-2 uppercase">Nombre completo *</label>
+                            <input type="text" name="nombre" required 
+                                   class="w-full px-4 py-3 input-luxury text-vanta-cream placeholder-vanta-gray/50"
+                                   placeholder="Ej. MarÃ­a Fernanda LÃ³pez">
+                        </div>
+                        <div>
+                            <label class="block text-xs tracking-widest text-vanta-gray mb-2 uppercase">Correo electrÃ³nico *</label>
+                            <input type="email" name="email" required 
+                                   class="w-full px-4 py-3 input-luxury text-vanta-cream placeholder-vanta-gray/50"
+                                   placeholder="nombre@ejemplo.com">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs tracking-widest text-vanta-gray mb-2 uppercase">TelÃ©fono / WhatsApp *</label>
+                            <input type="tel" name="telefono" required 
+                                   class="w-full px-4 py-3 input-luxury text-vanta-cream placeholder-vanta-gray/50"
+                                   placeholder="55 1234 5678">
+                        </div>
+                        <div>
+                            <label class="block text-xs tracking-widest text-vanta-gray mb-2 uppercase">Zona de CDMX *</label>
+                            <select name="zona" required class="w-full px-4 py-3 input-luxury text-vanta-cream bg-vanta-charcoal">
+                                <option value="" disabled selected>Selecciona una zona</option>
+                                <option value="Polanco">Polanco</option>
+                                <option value="Lomas">Lomas de Chapultepec / Virreyes</option>
+                                <option value="Santa Fe">Santa Fe</option>
+                                <option value="Roma/Condesa">Roma / Condesa</option>
+                                <option value="Interlomas">Interlomas / Bosque Real</option>
+                                <option value="Pedregal">Jardines del Pedregal</option>
+                                <option value="Otra">Otra zona</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs tracking-widest text-vanta-gray mb-2 uppercase">Tipo de proyecto *</label>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <label class="flex items-center gap-2 cursor-pointer group">
+                                <input type="radio" name="tipo_proyecto" value="residencial" required class="accent-vanta-gold">
+                                <span class="text-sm group-hover:text-vanta-gold transition-colors">Residencia privada</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer group">
+                                <input type="radio" name="tipo_proyecto" value="departamento" class="accent-vanta-gold">
+                                <span class="text-sm group-hover:text-vanta-gold transition-colors">Departamento</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer group">
+                                <input type="radio" name="tipo_proyecto" value="hotel" class="accent-vanta-gold">
+                                <span class="text-sm group-hover:text-vanta-gold transition-colors">Hotel / Boutique</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer group">
+                                <input type="radio" name="tipo_proyecto" value="corporativo" class="accent-vanta-gold">
+                                <span class="text-sm group-hover:text-vanta-gold transition-colors">Corporativo</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs tracking-widest text-vanta-gray mb-2 uppercase">Presupuesto estimado *</label>
+                        <select name="presupuesto" required class="w-full px-4 py-3 input-luxury text-vanta-cream bg-vanta-charcoal">
+                            <option value="" disabled selected>Selecciona rango de inversiÃ³n</option>
+                            <option value="250-500">$250,000 - $500,000 MXN</option>
+                            <option value="500-1M">$500,000 - $1,000,000 MXN</option>
+                            <option value="1M+">MÃ¡s de $1,000,000 MXN</option>
+                        </select>
+                        <p class="text-xs text-vanta-gray mt-2 italic">* Proyectos mÃ­nimos de $250,000 MXN</p>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs tracking-widest text-vanta-gray mb-2 uppercase">Detalles del proyecto</label>
+                        <textarea name="mensaje" rows="4" 
+                                  class="w-full px-4 py-3 input-luxury text-vanta-cream placeholder-vanta-gray/50 resize-none"
+                                  placeholder="Describe tu proyecto: nÃºmero de ventanas, tipo de soluciÃ³n requerida (motorizadas/manuales), necesidades especÃ­ficas de control solar..."></textarea>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <input type="checkbox" id="privacy" required class="mt-1 accent-vanta-gold">
+                        <label for="privacy" class="text-xs text-vanta-gray leading-relaxed cursor-pointer">
+                            Acepto que Casa Vanta se comunique conmigo vÃ­a WhatsApp o correo para agendar una consulta. 
+                            Entiendo que este es un servicio premium para proyectos de alto valor.
+                        </label>
+                    </div>
+
+                    <button type="submit" 
+                            class="w-full py-4 bg-vanta-gold text-vanta-black font-medium tracking-widest hover:bg-vanta-gold-light transition-all duration-300 flex items-center justify-center gap-2 group">
+                        SOLICITAR CONSULTA PRIVADA
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </button>
+
+                    <div class="flex items-center justify-center gap-6 pt-4 border-t border-vanta-cream/10">
+                        <div class="flex items-center gap-2 text-xs text-vanta-gray">
+                            <svg class="w-4 h-4 text-vanta-gold" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Respuesta en 24h
+                        </div>
+                        <div class="flex items-center gap-2 text-xs text-vanta-gray">
+                            <svg class="w-4 h-4 text-vanta-gold" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+                            </svg>
+                            InformaciÃ³n confidencial
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/521XXXXXXXXXX" target="_blank" 
+       class="fixed bottom-8 right-8 z-50 bg-green-600 text-white p-4 rounded-full shadow-2xl hover:bg-green-700 transition-all duration-300 hover:scale-110 flex items-center gap-2 group">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 whitespace-nowrap text-sm font-medium">AsesorÃ­a por WhatsApp</span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-vanta-black border-t border-vanta-gold/20 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <span class="font-serif text-2xl text-vanta-gold tracking-wider block mb-4">CASA VANTA</span>
+                    <p class="text-sm text-vanta-gray leading-relaxed">DiseÃ±o e instalaciÃ³n de cortinas y persianas de lujo para proyectos residenciales e institucionales en Ciudad de MÃ©xico.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-sm tracking-widest text-vanta-gold mb-4 uppercase">Servicios</h4>
+                    <ul class="space-y-2 text-sm text-vanta-gray">
+                        <li><a href="#" class="hover:text-vanta-gold transition-colors">Cortinas Motorizadas</a></li>
+                        <li><a href="#" class="hover:text-vanta-gold transition-colors">Persianas Inteligentes</a></li>
+                        <li><a href="#" class="hover:text-vanta-gold transition-colors">Control Solar ArquitectÃ³nico</a></li>
+                        <li><a href="#" class="hover:text-vanta-gold transition-colors">Proyectos Institucionales</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm tracking-widest text-vanta-gold mb-4 uppercase">Contacto</h4>
+                    <ul class="space-y-2 text-sm text-vanta-gray">
+                        <li>Ciudad de MÃ©xico, MÃ©xico</li>
+                        <li>info@casa-vanta.com</li>
+                        <li>+52 55 XXXX XXXX</li>
+                        <li class="pt-2">Lun - Vie: 9:00 - 18:00</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm tracking-widest text-vanta-gold mb-4 uppercase">Legal</h4>
+                    <ul class="space-y-2 text-sm text-vanta-gray">
+                        <li><a href="#" class="hover:text-vanta-gold transition-colors">Aviso de Privacidad</a></li>
+                        <li><a href="#" class="hover:text-vanta-gold transition-colors">TÃ©rminos y Condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-vanta-cream/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-vanta-gray">Â© 2024 Casa Vanta. Todos los derechos reservados.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-vanta-gray hover:text-vanta-gold transition-colors">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                    <a href="#" class="text-vanta-gray hover:text-vanta-gold transition-colors">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll Reveal Animation
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-vanta-black/95', 'shadow-lg');
+            } else {
+                navbar.classList.remove('bg-vanta-black/95', 'shadow-lg');
+            }
+        });
+
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Parallax Effect for Hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroImage = document.getElementById('heroImage');
+            if (heroImage) {
+                heroImage.style.transform = `translateY(${scrolled * 0.5}px) scale(1.1)`;
+            }
+        });
+
+        // Form Submission Handler
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // AquÃ­ irÃ­a la lÃ³gica de envÃ­o al CRM/Email
+            // Por ahora mostramos un mensaje de Ã©xito
+            
+            const form = this;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = 'ENVIANDO...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                form.innerHTML = `
+                    <div class="text-center py-12">
+                        <div class="w-16 h-16 bg-vanta-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-vanta-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-serif text-2xl text-vanta-gold mb-4">Solicitud Recibida</h3>
+                        <p class="text-vanta-gray mb-6">Hemos recibido tu informaciÃ³n. Un asesor se pondrÃ¡ en contacto contigo dentro de las prÃ³ximas 24 horas para agendar tu consulta privada.</p>
+                        <p class="text-sm text-vanta-gray">Mientras tanto, puedes contactarnos directamente por WhatsApp para una atenciÃ³n inmediata.</p>
+                    </div>
+                `;
+                
+                // AquÃ­ se dispararÃ­a el evento de conversiÃ³n para Google Ads
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-XXXXXXXX/XXXXXXXX',
+                        'value': 250000.0,
+                        'currency': 'MXN'
+                    });
+                }
+            }, 1500);
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('mobileMenu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
 </body>
-
 </html>
